@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <title>Hike Tracker</title>
+</head>
+<body>
+
+  <div id="app">
+    <h1>Hike Tracker</h1>
+
+    <!-- Input Form for Hike Tracking -->
+    <form id="hikeForm">
+      <label for="hikeName">Hike Name:</label>
+      <input type="text" id="hikeName" required>
+
+      <label for="startTime">Start Time:</label>
+      <input type="time" id="startTime" required>
+
+      <label for="stopTime">Stop Time:</label>
+      <input type="time" id="stopTime" required>
+
+      <button type="submit">Track Hike</button>
+    </form>
+
+    <!-- Button to View Previously Logged Hikes -->
+    <button id="viewHikesBtn">View Hikes</button>
+
+    <!-- Display Section for Previously Logged Hikes -->
+    <div id="hikeLog" class="hidden">
+      <h2>Previously Logged Hikes</h2>
+      <ul id="hikeList"></ul>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
